@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>404 — NAMUNA SHOP</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#050505">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23050505'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-family='Arial' font-weight='700' font-size='38' fill='%23d4af37'%3EN%3C/text%3E%3C/svg%3E">
+<style>
+*{box-sizing:border-box}html,body{height:100%;margin:0}
+body{background:radial-gradient(900px 500px at 50% 35%,rgba(212,175,55,.14),transparent 70%),#050505;color:#f6f6f4;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;display:grid;place-items:center;padding:24px;text-align:center;-webkit-font-smoothing:antialiased}
+.wrap{display:grid;justify-items:center;gap:16px;max-width:420px}
+.brand{font-weight:800;letter-spacing:.22em;font-size:15px;background:linear-gradient(135deg,#f6e3a1,#d4af37 50%,#a8841f);-webkit-background-clip:text;background-clip:text;color:transparent}
+.code{font-weight:800;font-size:clamp(96px,30vw,168px);line-height:1;letter-spacing:.04em;background:linear-gradient(135deg,#f6e3a1,#d4af37 48%,#a8841f);-webkit-background-clip:text;background-clip:text;color:transparent;animation:in .9s cubic-bezier(.22,.8,.24,1) both}
+p{margin:0;color:#a3a3a3;font-size:18px;animation:in .9s .15s cubic-bezier(.22,.8,.24,1) both}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:54px;padding:0 28px;margin-top:10px;border-radius:14px;background:linear-gradient(135deg,#f6e3a1,#d4af37 48%,#a8841f);color:#0b0b0b;font-weight:700;font-size:16px;text-decoration:none;box-shadow:0 8px 26px rgba(212,175,55,.25);transition:transform .15s;animation:in .9s .3s cubic-bezier(.22,.8,.24,1) both}
+.btn:active{transform:scale(.97)}.btn:focus-visible{outline:2px solid #d4af37;outline-offset:3px}
+@keyframes in{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="brand">NAMUNA SHOP</div>
+  <div class="code" aria-hidden="true">404</div>
+  <h1 style="position:absolute;left:-9999px">404</h1>
+  <p>Саҳифа ёфт нашуд.</p>
+  <a class="btn" id="back" href="index.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>Бозгашт</a>
+</main>
+<script>
+/* Дар GitHub Pages (сайти лоиҳа) роҳи асосӣ /<ном-репозиторий>/ аст; дар дигар ҷойҳо — / */
+(function(){
+  var base = location.hostname.slice(-10) === ".github.io" ? "/" + (location.pathname.split("/")[1] || "") + "/" : "/";
+  if (location.protocol === "file:") base = "";
+  document.getElementById("back").setAttribute("href", base + "index.html");
+})();
+</script>
+</body>
+</html>

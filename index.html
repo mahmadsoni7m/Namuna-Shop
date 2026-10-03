@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="tg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NAMUNA SHOP — Мағозаи либос</title>
+<meta name="description" content="NAMUNA SHOP — мағозаи замонавии либос дар Тоҷикистон. Либоси мардона, занона ва аксессуарҳо бо сифати баланд ва нархи муносиб.">
+<meta name="keywords" content="NAMUNA SHOP, мағозаи либос, либоси мардона, либоси занона, аксессуарҳо, тахфиф, Тоҷикистон, Душанбе, харид">
+<meta name="theme-color" content="#050505">
+<meta name="color-scheme" content="dark">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NAMUNA SHOP">
+<meta property="og:locale" content="tg_TJ">
+<meta property="og:title" content="NAMUNA SHOP — Мағозаи либос">
+<meta property="og:description" content="NAMUNA SHOP — мағозаи замонавии либос дар Тоҷикистон. Либоси мардона, занона ва аксессуарҳо бо сифати баланд ва нархи муносиб.">
+<meta property="og:image" content="assets/banners/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/logo/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/logo/favicon.png" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700;800&display=swap&subset=cyrillic,cyrillic-ext">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animations.css">
+<script>document.documentElement.classList.add("js");</script>
+</head>
+<body data-page="home">
+<a class="skip-link" href="#main">Гузариш ба мундариҷа</a>
+<header class="site-header" id="siteHeader"></header>
+<main id="main">
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="hero__bg"><img src="assets/banners/hero.jpg" alt="Коллексияи либоси NAMUNA SHOP" width="1600" height="1000" fetchpriority="high" onerror="imgFallback(this)"></div>
+    <div class="hero__content">
+      <p class="hero__brand">NAMUNA SHOP</p>
+      <h1 class="hero__title" id="heroTitle">Услуби шумо. Интихоби шумо.</h1>
+      <p class="hero__text">Либосҳои замонавӣ барои услуби шумо.</p>
+      <a class="btn btn--gold btn--lg" href="catalog.html">Харид <i data-icon="arrowRight" data-size="20"></i></a>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="cats-t">
+    <div class="section__head"><h2 class="section__title" id="cats-t">Категорияҳо</h2></div>
+    <div class="cat-grid">
+      <a class="cat-card reveal" style="--i:0" href="catalog.html?cat=%D0%9C%D0%B0%D1%80%D0%B4%D0%BE%D0%BD%D0%B0">
+        <img src="assets/banners/cat-men.jpg" alt="Мардона" width="600" height="800" loading="lazy" decoding="async" onerror="imgFallback(this)">
+        <span>Мардона<i data-icon="arrowRight" data-size="20"></i></span>
+      </a>
+      <a class="cat-card reveal" style="--i:1" href="catalog.html?cat=%D0%97%D0%B0%D0%BD%D0%BE%D0%BD%D0%B0">
+        <img src="assets/banners/cat-women.jpg" alt="Занона" width="600" height="800" loading="lazy" decoding="async" onerror="imgFallback(this)">
+        <span>Занона<i data-icon="arrowRight" data-size="20"></i></span>
+      </a>
+      <a class="cat-card reveal" style="--i:2" href="catalog.html?filter=new">
+        <img src="assets/banners/cat-new.jpg" alt="Навгониҳо" width="600" height="800" loading="lazy" decoding="async" onerror="imgFallback(this)">
+        <span>Навгониҳо<i data-icon="arrowRight" data-size="20"></i></span>
+      </a>
+      <a class="cat-card reveal" style="--i:3" href="catalog.html?filter=sale">
+        <img src="assets/banners/cat-sale.jpg" alt="Тахфифҳо" width="600" height="800" loading="lazy" decoding="async" onerror="imgFallback(this)">
+        <span>Тахфифҳо<i data-icon="arrowRight" data-size="20"></i></span>
+      </a>
+      <a class="cat-card reveal" style="--i:4" href="catalog.html?cat=%D0%90%D0%BA%D1%81%D0%B5%D1%81%D1%81%D1%83%D0%B0%D1%80%D2%B3%D0%BE">
+        <img src="assets/banners/cat-accessories.jpg" alt="Аксессуарҳо" width="600" height="800" loading="lazy" decoding="async" onerror="imgFallback(this)">
+        <span>Аксессуарҳо<i data-icon="arrowRight" data-size="20"></i></span>
+      </a>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="featuredGrid-t">
+    <div class="section__head"><h2 class="section__title" id="featuredGrid-t">Маҳсулоти интихобшуда</h2><a class="link-arrow" href="catalog.html">Ҳама <i data-icon="arrowRight" data-size="16"></i></a></div>
+    <div class="product-grid" id="featuredGrid"></div>
+  </section>
+
+  <section class="section" aria-labelledby="newGrid-t">
+    <div class="section__head"><h2 class="section__title" id="newGrid-t">Навгониҳо</h2><a class="link-arrow" href="catalog.html?filter=new">Ҳама <i data-icon="arrowRight" data-size="16"></i></a></div>
+    <div class="product-grid" id="newGrid"></div>
+  </section>
+
+  <section class="section" aria-labelledby="saleGrid-t">
+    <div class="section__head"><h2 class="section__title" id="saleGrid-t">Тахфифҳо</h2><a class="link-arrow" href="catalog.html?filter=sale">Ҳама <i data-icon="arrowRight" data-size="16"></i></a></div>
+    <div class="product-grid" id="saleGrid"></div>
+  </section>
+
+  <section class="section" id="recentSection" hidden aria-labelledby="recentGrid-t">
+    <div class="section__head"><h2 class="section__title" id="recentGrid-t">Ба наздикӣ дидашуда</h2></div>
+    <div class="product-grid" id="recentGrid"></div>
+  </section>
+</main>
+<footer class="site-footer" id="siteFooter"></footer>
+<nav class="bottom-nav" id="bottomNav" aria-label="Ҳаракати асосӣ"></nav>
+<script src="config.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/products.js"></script>
+<script src="js/favorites.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/search.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

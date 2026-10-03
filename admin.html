@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="tg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#050505">
+<title>Админ — NAMUNA SHOP</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#050505;color:#f2f2f2;font:16px/1.5 system-ui,Arial,sans-serif;padding:16px 16px 80px}
+.w{max-width:520px;margin:0 auto}h1{font-size:20px;color:#d4af37;letter-spacing:2px;margin:8px 0 16px}
+.card{background:#111;border:1px solid #2a2410;border-radius:14px;padding:14px;margin-bottom:14px}
+h2{font-size:16px;margin:0 0 10px;color:#d4af37}label{display:block;font-size:13px;color:#aaa;margin:10px 0 4px}
+input,select,textarea{width:100%;background:#0b0b0b;color:#fff;border:1px solid #333;border-radius:10px;padding:12px;font:inherit}
+input:focus,select:focus,textarea:focus{outline:2px solid #d4af37;border-color:#d4af37}
+.row{display:flex;gap:10px}.row>*{flex:1}
+button{width:100%;margin-top:14px;background:#d4af37;color:#111;border:0;border-radius:12px;padding:14px;font:700 16px system-ui;cursor:pointer}
+button.s{background:#222;color:#d4af37;border:1px solid #d4af37}button:disabled{opacity:.5}
+#log{white-space:pre-wrap;font-size:14px;margin-top:10px}.ok{color:#6ee7a0}.er{color:#ff7b7b}
+.chk{display:flex;gap:10px;align-items:center;color:#ddd;font-size:15px}.chk input{width:20px;height:20px}
+.it{display:flex;gap:10px;align-items:center;border-top:1px solid #222;padding:10px 0}.it img{width:56px;height:56px;object-fit:cover;border-radius:8px;background:#222}.it div{flex:1;min-width:0}.it b{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.it button{width:auto;margin:0;padding:8px 12px;font-size:14px}.it .d{background:#3a1212;color:#ff9b9b}
+small{color:#888;display:block;margin-top:6px}#prev{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}#prev img{width:70px;height:70px;object-fit:cover;border-radius:8px}
+</style>
+</head>
+<body>
+<div class="w">
+<h1>NAMUNA · АДМИН</h1>
+
+<div class="card" id="setCard">
+  <h2>1. Пайвастшавӣ ба GitHub (як бор)</h2>
+  <label>Репозиторий (корбар/ном)</label>
+  <input id="repo" placeholder="mahmadsoni7m/namuna-shop" autocapitalize="off" autocomplete="off">
+  <label>Branch</label>
+  <input id="branch" value="main" autocapitalize="off">
+  <label>Token (ghp_... ё github_pat_...)</label>
+  <input id="token" type="password" autocapitalize="off" autocomplete="off">
+  <small>Token танҳо дар ҳамин телефон нигоҳ дошта мешавад. Дар README тарзи сохтани он навишта шудааст.</small>
+  <button class="s" id="saveSet" type="button">Захира ва санҷиш</button>
+  <div id="setLog"></div>
+</div>
+
+<div class="card">
+  <h2>2. Маҳсулоти нав</h2>
+  <label>Ном</label><input id="name" placeholder="Футболкаи сафед">
+  <div class="row">
+    <div><label>Категория</label><select id="cat"><option>Мардона</option><option>Занона</option><option>Аксессуарҳо</option></select></div>
+    <div><label>Ранг</label><select id="color"></select></div>
+  </div>
+  <div class="row">
+    <div><label>Нарх (с.)</label><input id="price" type="number" inputmode="numeric" min="1"></div>
+    <div><label>Нархи пештара</label><input id="old" type="number" inputmode="numeric" min="0" value="0"></div>
+  </div>
+  <label>Андозаҳо (бо вергул)</label><input id="sizes" value="S,M,L,XL">
+  <label>Тавсиф</label><textarea id="desc" rows="3">Маҳсулоти босифат. Мулоим ва қулай барои ҳар рӯз.</textarea>
+  <label>Расм(ҳо)</label><input id="photos" type="file" accept="image/*" multiple>
+  <div id="prev"></div>
+  <button id="go" type="button">Илова кардан</button>
+  <div id="log"></div>
+</div>
+
+<div class="card">
+  <h2>3. Маҳсулоти мавҷуда</h2>
+  <button class="s" id="reload" type="button" style="margin-top:0">Рӯйхатро нав кардан</button>
+  <div id="list"></div>
+  <div id="listLog"></div>
+</div>
+
+<div class="card" id="editCard" hidden>
+  <h2 id="editTitle">Таҳрир</h2>
+  <label>Ном</label><input id="e_name">
+  <div class="row">
+    <div><label>Категория</label><select id="e_cat"><option>Мардона</option><option>Занона</option><option>Аксессуарҳо</option></select></div>
+    <div><label>Нарх (с.)</label><input id="e_price" type="number" inputmode="numeric" min="1"></div>
+  </div>
+  <div class="row">
+    <div><label>Нархи пештара</label><input id="e_old" type="number" inputmode="numeric" min="0"></div>
+    <div><label>Андозаҳо</label><input id="e_sizes"></div>
+  </div>
+  <label>Андозаҳои тамомшуда (бо вергул)</label><input id="e_sold" placeholder="масалан XL">
+  <label>Тавсиф</label><textarea id="e_desc" rows="3"></textarea>
+  <label class="chk"><input type="checkbox" id="e_new"> Навгонӣ</label>
+  <label class="chk"><input type="checkbox" id="e_feat"> Дар саҳифаи асосӣ</label>
+  <label class="chk"><input type="checkbox" id="e_hot"> Машҳур (Hot)</label>
+  <label class="chk"><input type="checkbox" id="e_lim"> Маҳдуд</label>
+  <button id="e_save" type="button">Захира кардан</button>
+  <h2 style="margin-top:18px">Ранги нав илова кардан</h2>
+  <div class="row"><div><label>Ранг</label><select id="e_color"></select></div></div>
+  <label>Расм(ҳо)</label><input id="e_photos" type="file" accept="image/*" multiple>
+  <button class="s" id="e_addcolor" type="button">Ранг илова кардан</button>
+  <button class="s" id="e_close" type="button">Пӯшидан</button>
+  <div id="editLog"></div>
+</div>
+</div>
+<script src="js/admin.js"></script>
+</body>
+</html>
