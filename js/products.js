@@ -55,5 +55,31 @@ const PRODUCTS = [
     "sale": false,
     "hot": false,
     "limited": false
+  },
+  {
+    "id": 2,
+    "name": "фудболкаи сиёҳ",
+    "category": "Мардона",
+    "price": 56,
+    "description": "Маҳсулоти босифат. Мулоим ва қулай барои ҳар рӯз.",
+    "colors": [
+      {
+        "name": "Сиёҳ",
+        "images": [
+          "assets/products/product-002/black/1.jpg"
+        ]
+      }
+    ],
+    "sizes": [
+      "xl"
+    ],
+    "soldOutSizes": [],
+    "rating": 4.8,
+    "reviews": 10,
+    "featured": true,
+    "newArrival": true,
+    "sale": false,
+    "hot": false,
+    "limited": false
   }
 ];
