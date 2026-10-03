@@ -29,4 +29,31 @@ const DEMO_REVIEWS = [
 ];
 
 /* Рӯйхати маҳсулот. Ҳоло холӣ аст: маҳсулотро тавассути admin.html илова кунед. */
-const PRODUCTS = [];
+const PRODUCTS = [
+  {
+    "id": 1,
+    "name": "футболкаи сафед",
+    "category": "Мардона",
+    "price": 100,
+    "description": "Маҳсулоти босифат. Мулоим ва қулай барои ҳар рӯз.",
+    "colors": [
+      {
+        "name": "Сафед",
+        "images": [
+          "assets/products/product-001/white/1.jpg"
+        ]
+      }
+    ],
+    "sizes": [
+      "xxl"
+    ],
+    "soldOutSizes": [],
+    "rating": 4.8,
+    "reviews": 10,
+    "featured": true,
+    "newArrival": true,
+    "sale": false,
+    "hot": false,
+    "limited": false
+  }
+];
