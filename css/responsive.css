@@ -1,0 +1,102 @@
+/* ==========================================================
+   NAMUNA SHOP — ҷойгиршавӣ барои экранҳои гуногун
+   Мобилӣ — асосӣ (дар style.css), инҷо — калонтар
+   ========================================================== */
+
+/* Телефони хурд */
+@media (max-width: 359px) {
+  .product-grid { gap: 18px 8px; }
+  .logo { font-size: 15px; letter-spacing: .14em; }
+  .icon-btn { width: 40px; height: 40px; }
+}
+
+/* Планшет хурд */
+@media (min-width: 600px) {
+  .container, .section, .page-head, .toolbar, .page-main, .pdp, .breadcrumb, .footer__inner { padding-inline: 24px; }
+  .product-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px 18px; }
+  .cat-grid { grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .cat-card:last-child:nth-child(odd) { grid-column: auto; aspect-ratio: 3 / 4; }
+  .section__title { font-size: 26px; }
+  .page-title { font-size: 32px; }
+  .hero__content { padding: 0 32px 56px; }
+  .toasts { bottom: calc(var(--nav-h) + var(--safe-b) + 20px); }
+  .qv { grid-template-columns: 1fr 1fr; }
+  .qv__media { aspect-ratio: auto; min-height: 460px; }
+  .sheet--wide { left: 50%; right: auto; bottom: auto; top: 50%; width: min(880px, 92vw); max-height: 88vh; border-radius: 26px; border-bottom: 1px solid var(--line); transform: translate(-50%, -46%) scale(.97); opacity: 0; }
+  .sheet--wide.is-open { transform: translate(-50%, -50%); opacity: 1; }
+  .drawer { width: 440px; max-width: 100%; }
+  .result__actions .btn { padding: 0 16px; }
+}
+
+/* Планшет / ноутбуки хурд */
+@media (min-width: 900px) {
+  :root { --header-h: 74px; }
+  body { padding-bottom: 0; }
+  .bottom-nav { display: none; }
+  .header__inner { padding-inline: 24px; }
+  .logo { font-size: 20px; }
+  .header__nav { display: flex; align-items: center; gap: 34px; position: absolute; left: 50%; transform: translateX(-50%); }
+  .header__nav a { position: relative; padding: 8px 0; font-size: 15px; font-weight: 500; color: rgba(255, 255, 255, .72); transition: color .2s; }
+  .header__nav a::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 2px; border-radius: 1px; background: var(--gold-grad); transform: scaleX(0); transform-origin: left; transition: transform .35s var(--ease); }
+  .header__nav a:hover, .header__nav a[aria-current="page"] { color: #fff; }
+  .header__nav a:hover::after, .header__nav a[aria-current="page"]::after { transform: scaleX(1); }
+  .header__actions { gap: 6px; }
+  .toasts { bottom: 28px; }
+  .buybar { display: none; }
+
+  .hero { height: clamp(560px, 86vh, 820px); }
+  .hero__content { padding: 0 48px 72px; }
+  .section { padding-top: 64px; }
+  .cat-grid { grid-template-columns: repeat(5, 1fr); }
+  .product-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 36px 22px; }
+  .page-main { padding-block: 28px 40px; }
+
+  /* Филтр: панели паҳлӯӣ; ҷудокунӣ: равзанаи марказӣ */
+  .sheet:not(.sheet--wide):not(.sheet--side) { left: 50%; right: auto; bottom: auto; top: 50%; width: 400px; border-radius: 22px; border-bottom: 1px solid var(--line); transform: translate(-50%, -46%) scale(.97); opacity: 0; }
+  .sheet:not(.sheet--wide):not(.sheet--side).is-open { transform: translate(-50%, -50%); opacity: 1; }
+  #filterPanel { left: auto; right: 0; top: 0; bottom: 0; width: 420px; max-height: none; height: 100%; border-radius: 0; border: 0; border-left: 1px solid var(--line); transform: translateX(100%); opacity: 1; }
+  #filterPanel.is-open { transform: none; }
+  .sheet__grab { display: none; }
+  .sheet__close { top: 16px; right: 16px; }
+
+  .pdp { grid-template-columns: minmax(0, 1.12fr) minmax(0, .88fr); gap: 56px; padding-top: 16px; align-items: start; }
+  .gallery { grid-template-columns: 84px minmax(0, 1fr); align-items: start; }
+  .gallery__thumbs { order: -1; flex-direction: column; overflow: visible; max-height: 80vh; }
+  .thumb { width: 84px; }
+  .gallery__stage { max-height: 82vh; }
+  .gallery__stage:hover .gallery__img { transform: scale(1.9); transform-origin: var(--zx, 50%) var(--zy, 50%); transition: opacity .18s, transform .25s ease-out; }
+  .gallery__nav, .gallery__full { opacity: 0; transition: opacity .25s, background .2s; }
+  .gallery__stage:hover .gallery__nav, .gallery__stage:hover .gallery__full, .gallery__nav:focus-visible, .gallery__full:focus-visible { opacity: 1; }
+  .pdp__info { position: sticky; top: calc(var(--header-h) + 24px); }
+  .pdp__title { font-size: 34px; }
+  .pdp__actions { grid-template-columns: 1fr 1fr auto auto; }
+  .reviews { grid-template-columns: 240px 1fr; gap: 40px; align-items: start; }
+  .reviews__sum { flex-direction: column; align-items: flex-start; gap: 8px; }
+
+  .cart-page { grid-template-columns: minmax(0, 1fr) 380px; gap: 40px; align-items: start; }
+  .cart-page__summary { position: sticky; top: calc(var(--header-h) + 24px); }
+  .checkout { grid-template-columns: minmax(0, 1fr) 420px; gap: 48px; align-items: start; }
+  .checkout__summary { order: 0; position: sticky; top: calc(var(--header-h) + 24px); }
+  .footer__inner { grid-template-columns: 1.3fr 1fr; align-items: start; padding-block: 48px 32px; }
+  .footer__links { justify-content: flex-end; }
+  .footer__copy { grid-column: 1 / -1; padding-top: 18px; border-top: 1px solid var(--line); }
+  .lightbox__nav--prev { left: 28px; } .lightbox__nav--next { right: 28px; }
+}
+
+/* Экранҳои калон */
+@media (min-width: 1280px) {
+  .product-grid { gap: 44px 26px; }
+  .hero__brand { letter-spacing: .16em; }
+}
+
+/* Экранҳои хеле калон */
+@media (min-width: 1700px) {
+  .container, .section, .page-head, .toolbar, .page-main, .pdp, .breadcrumb, .footer__inner, .header__inner, .hero__content { max-width: 1560px; }
+  body { font-size: 16px; }
+}
+
+/* Экрани паст дар ҳолати уфуқӣ */
+@media (max-height: 520px) and (orientation: landscape) {
+  .hero { height: 100svh; }
+  .sheet { max-height: 94vh; }
+}
