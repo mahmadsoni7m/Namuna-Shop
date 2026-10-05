@@ -111,5 +111,32 @@ const PRODUCTS = [
     "sale": true,
     "hot": false,
     "limited": false
+  },
+  {
+    "id": 4,
+    "name": "костюм двойка",
+    "category": "Мардона",
+    "price": 500,
+    "oldPrice": 550,
+    "description": "Маҳсулоти босифат. Мулоим ва қулай барои ҳар рӯз.",
+    "colors": [
+      {
+        "name": "Сиёҳ",
+        "images": [
+          "assets/products/product-004/black/1.jpg"
+        ]
+      }
+    ],
+    "sizes": [
+      "ХL"
+    ],
+    "soldOutSizes": [],
+    "rating": 4.8,
+    "reviews": 10,
+    "featured": true,
+    "newArrival": true,
+    "sale": true,
+    "hot": false,
+    "limited": false
   }
 ];
