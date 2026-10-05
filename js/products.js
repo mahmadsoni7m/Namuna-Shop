@@ -81,5 +81,35 @@ const PRODUCTS = [
     "sale": false,
     "hot": false,
     "limited": false
+  },
+  {
+    "id": 3,
+    "name": "Кофтаи капюшондор бо замок",
+    "category": "Мардона",
+    "price": 250,
+    "oldPrice": 300,
+    "description": "Маҳсулоти босифат. Мулоим ва қулай барои ҳар рӯз.",
+    "colors": [
+      {
+        "name": "Кабуд",
+        "images": [
+          "assets/products/product-003/blue/1.jpg",
+          "assets/products/product-003/blue/2.jpg",
+          "assets/products/product-003/blue/3.jpg",
+          "assets/products/product-003/blue/4.jpg"
+        ]
+      }
+    ],
+    "sizes": [
+      "М"
+    ],
+    "soldOutSizes": [],
+    "rating": 4.8,
+    "reviews": 10,
+    "featured": true,
+    "newArrival": true,
+    "sale": true,
+    "hot": false,
+    "limited": false
   }
 ];
