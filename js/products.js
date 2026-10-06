@@ -131,6 +131,12 @@ const PRODUCTS = [
         "images": [
           "assets/products/product-004/red/1.jpg"
         ]
+      },
+      {
+        "name": "Кабуд",
+        "images": [
+          "assets/products/product-004/blue/1.jpg"
+        ]
       }
     ],
     "sizes": [
