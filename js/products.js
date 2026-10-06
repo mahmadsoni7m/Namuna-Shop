@@ -125,6 +125,12 @@ const PRODUCTS = [
         "images": [
           "assets/products/product-004/black/1.jpg"
         ]
+      },
+      {
+        "name": "Сурх",
+        "images": [
+          "assets/products/product-004/red/1.jpg"
+        ]
       }
     ],
     "sizes": [
