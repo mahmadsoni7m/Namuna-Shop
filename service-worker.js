@@ -1,5 +1,5 @@
 /* NAMUNA SHOP — Service Worker (офлайн) */
-const VERSION = "namuna-v4";
+const VERSION = "namuna-v5";
 const STATIC = VERSION + "-static";
 const RUNTIME = VERSION + "-runtime";
 const PRECACHE = [
