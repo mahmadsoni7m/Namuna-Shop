@@ -150,5 +150,37 @@ const PRODUCTS = [
     "sale": true,
     "hot": false,
     "limited": false
+  },
+  {
+    "id": 5,
+    "name": "😎",
+    "category": "Мардона",
+    "price": 470,
+    "oldPrice": 500,
+    "description": "Маҳсулоти босифат. Мулоим ва қулай барои ҳар рӯз.",
+    "colors": [
+      {
+        "name": "Сиёҳ",
+        "images": [
+          "assets/products/product-005/black/1.jpg",
+          "assets/products/product-005/black/2.jpg",
+          "assets/products/product-005/black/3.jpg"
+        ]
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "soldOutSizes": [],
+    "rating": 4.8,
+    "reviews": 10,
+    "featured": true,
+    "newArrival": true,
+    "sale": true,
+    "hot": false,
+    "limited": false
   }
 ];
