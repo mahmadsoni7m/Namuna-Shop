@@ -182,5 +182,35 @@ const PRODUCTS = [
     "sale": true,
     "hot": false,
     "limited": false
+  },
+  {
+    "id": 6,
+    "name": "Dior",
+    "category": "Мардона",
+    "price": 85,
+    "oldPrice": 100,
+    "description": "Маҳсулоти босифат. Мулоим ва қулай барои ҳар рӯз.",
+    "colors": [
+      {
+        "name": "Сабз",
+        "images": [
+          "assets/products/product-006/green/1.jpg"
+        ]
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "soldOutSizes": [],
+    "rating": 4.8,
+    "reviews": 10,
+    "featured": true,
+    "newArrival": true,
+    "sale": true,
+    "hot": false,
+    "limited": false
   }
 ];
