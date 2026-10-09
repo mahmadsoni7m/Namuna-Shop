@@ -212,5 +212,31 @@ const PRODUCTS = [
     "sale": true,
     "hot": false,
     "limited": false
+  },
+  {
+    "id": 7,
+    "name": "sport watch",
+    "category": "Аксессуарҳо",
+    "price": 35,
+    "oldPrice": 50,
+    "description": "Маҳсулоти босифат. Мулоим ва қулай барои ҳар рӯз.",
+    "colors": [
+      {
+        "name": "Сиёҳ",
+        "images": [
+          "assets/products/product-007/black/1.jpg",
+          "assets/products/product-007/black/2.jpg"
+        ]
+      }
+    ],
+    "sizes": [],
+    "soldOutSizes": [],
+    "rating": 4.8,
+    "reviews": 10,
+    "featured": true,
+    "newArrival": true,
+    "sale": true,
+    "hot": false,
+    "limited": false
   }
 ];
