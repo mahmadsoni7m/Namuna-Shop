@@ -219,7 +219,7 @@ const PRODUCTS = [
     "category": "Аксессуарҳо",
     "price": 35,
     "oldPrice": 50,
-    "description": "Маҳсулоти босифат. Мулоим ва қулай барои ҳар рӯз.",
+    "description": "",
     "colors": [
       {
         "name": "Сиёҳ",
