@@ -238,5 +238,30 @@ const PRODUCTS = [
     "sale": true,
     "hot": false,
     "limited": false
+  },
+  {
+    "id": 8,
+    "name": "майдача 😂",
+    "category": "Мардона",
+    "price": 99,
+    "oldPrice": 100,
+    "description": "Маҳсулоти босифат. Мулоим ва қулай барои ҳар рӯз.",
+    "colors": [
+      {
+        "name": "Сафед",
+        "images": [
+          "assets/products/product-008/white/1.jpg"
+        ]
+      }
+    ],
+    "sizes": [],
+    "soldOutSizes": [],
+    "rating": 4.8,
+    "reviews": 10,
+    "featured": true,
+    "newArrival": true,
+    "sale": true,
+    "hot": false,
+    "limited": false
   }
 ];
