@@ -263,5 +263,35 @@ const PRODUCTS = [
     "sale": true,
     "hot": false,
     "limited": false
+  },
+  {
+    "id": 9,
+    "name": "абдуло",
+    "category": "Мардона",
+    "price": 2500,
+    "oldPrice": 3000,
+    "description": "Маҳсулоти босифат. Мулоим ва қулай барои ҳар рӯз.",
+    "colors": [
+      {
+        "name": "Сафед",
+        "images": [
+          "assets/products/product-009/white/1.jpg"
+        ]
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "soldOutSizes": [],
+    "rating": 4.8,
+    "reviews": 10,
+    "featured": true,
+    "newArrival": true,
+    "sale": true,
+    "hot": false,
+    "limited": false
   }
 ];
